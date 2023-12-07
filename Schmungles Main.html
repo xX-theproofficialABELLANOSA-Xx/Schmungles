@@ -1,12 +1,82 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="style_main.css">
+		<style>
+		
+		
+			.container{
+				
+			background:beige;
+			display:grid;
+			border:5px solid cyan;
+			grid-template-rows:1fr 8fr 1fr;
+			font-family:courier;
+			color:cadetblue;
+			font-weight:bold;
+			column-gap:5px;
+			row-gap:5px;
+			
+			}
+			
+			.header{
+				
+			background:aquamarine;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 5;
+			height:75px;
+				
+			}
+			
+			.nav{
+				
+			background:aquamarine;
+			font-size:2em;
+			text-align:center;
+			flex-direction:column;
+				
+			}
+			
+			.main{
+				
+			background:aquamarine;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 3;
+				
+			}
+			
+			.aside{
+				
+			background:aquamarine;
+			font-size:2em;
+			text-align:center;
+				
+			}
+			
+			.footer{
+				
+			background:aquamarine;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 5;
+			height:75px;
+				
+			}
+			
+			
+		</style>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Schmungles! 💲🤑💲</title>
 	</head>	
 <body>
 
-<h1>hallo!</h1>
+	<div class=container>
+		<div class=header>Header</div>
+		<div class=nav>Nav</div>
+		<div class=main>Main</div>
+		<div class=aside>Aside</div>
+		<div class=footer>Footer</div>
+	</div>
 
 </body>
 </html>
