@@ -1,0 +1,343 @@
+<html>
+	<head>
+		<style>
+		
+		
+			.container{
+				
+			background:aquamarine;
+			display:grid;
+			border:5px solid aquamarine;
+			grid-template-rows:1fr 8fr 1fr;
+			font-family:courier;
+			color:cadetblue;
+			font-weight:bold;
+			column-gap:5px;
+			row-gap:5px;
+			
+			}
+			
+			.header{
+				
+			background:azure;
+			font-size:3em;
+			text-align:center;
+			grid-column:span 5;
+			height:125px;
+				
+			}
+			
+			.nav{
+			
+			display:grid;
+			grid-template-columns:1fr;
+			grid-template-rows:100px 100px 100px 100px 100px;
+			background:azure;
+			font-size:1em;
+			text-align:center;
+			flex-direction:column;
+				
+			}
+			
+			.main{
+				
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 3;
+				
+			}
+			
+			.main video {
+				
+			height:340px;
+			width:340px;
+				
+			}
+			
+			.aside{
+			
+			display:grid;
+			justify-content:space-evenly;
+			grid-template-columns:1fr;
+			grid-template-rows:1fr 1fr 1fr;
+			padding-top:40px;
+			background:azure;
+			font-size:2em;
+			text-align:center;
+				
+			}
+			
+			.aside img {
+			height:150px;
+			width:150px;
+				
+			}
+			
+			.footer{
+				
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 5;
+			height:75px;
+				
+			}
+			
+			@media only screen and (max-width:680px) {
+				
+			.header{
+				
+			display:grid;
+			grid-column:span 1;
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 5;
+			height:75px;
+				
+			}
+				
+			.container{
+				
+			background:aquamarine;
+			display:grid;
+			border:5px solid aquamarine;
+			grid-template-rows:1fr;
+			font-family:courier;
+			color:cadetblue;
+			font-weight:bold;
+			column-gap:5px;
+			row-gap:5px;
+			
+			}
+				
+			.main{
+				
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 4;
+				
+			}
+				
+			.aside{
+			
+			display:grid;
+			grid-column:span 5;
+			grid-row:span 5;
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			display:flex;
+			flex:wrap;
+			justify-content:space-evenly;
+				
+			}
+				
+			}
+			
+			@media only screen and (max-width:500px) {
+				
+			.header{
+				
+			display:grid;
+			grid-column:span 1;
+			background:azure;
+			font-size:1em;
+			text-align:center;
+			grid-column:span 5;
+			height:75px;
+				
+			}
+			
+			.nav{
+			
+			display:grid;
+			grid-column:span 5;
+			grid-row:span 5;
+			background:azure;
+			font-size:1.5em;
+			text-align:center;
+			flex-direction:column;
+			display:flex;
+			flex:wrap;
+				
+			}
+			
+			.container{
+				
+			background:aquamarine;
+			display:grid;
+			border:5px solid aquamarine;
+			grid-template-rows:1fr;
+			font-family:courier;
+			color:cadetblue;
+			font-weight:bold;
+			column-gap:5px;
+			row-gap:5px;
+			
+			}
+				
+			.main{
+				
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			grid-column:span 5;
+				
+			}
+				
+			.aside{
+			
+			display:grid;
+			grid-column:span 5;
+			grid-row:span 5;
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			display:flex;
+			flex:wrap;
+			justify-content:space-evenly;
+				
+			}
+					
+			.aside img {
+			
+			height:100;
+			width:100;
+				
+			}
+				
+			}
+			
+			.footer{
+				
+			background:azure;
+			font-size:1em;
+			text-align:center;
+			grid-column:span 5;
+			height:125px;
+				
+			}
+			
+			@media only screen and (max-width:375px) {
+				
+			.header{
+				
+			display:grid;
+			grid-column:span 1;
+			background:azure;
+			font-size:1em;
+			text-align:center;
+			grid-column:span 5;
+			height:75px;
+				
+			}
+			
+			.nav{
+			
+			display:grid;
+			grid-column:span 5;
+			grid-row:span 5;
+			background:azure;
+			font-size:1em;
+			text-align:center;
+			flex-direction:column;
+			display:flex;
+			flex:wrap;
+				
+			}
+				
+			.main{
+				
+			background:azure;
+			font-size:1em;
+			text-align:center;
+			grid-column:span 5;
+				
+			}
+			
+			.main video {
+				
+			width:150;
+			height:150;
+				
+			}
+				
+			.aside{
+			
+			display:grid;
+			grid-column:span 5;
+			grid-row:span 5;
+			background:azure;
+			font-size:2em;
+			text-align:center;
+			display:flex;
+			flex:wrap;
+			justify-content:space-evenly;
+				
+			}
+					
+			.aside img {
+			
+			height:75;
+			width:75;
+				
+			}
+				
+			}
+			
+			.footer{
+				
+			background:azure;
+			font-size:0.8em;
+			text-align:center;
+			grid-column:span 5;
+			height:125px;
+				
+			}
+			
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Schmungles! 💲🤑💲</title>
+	</head>	
+<body>
+
+	<div class=container>
+		<div class=header>Official Pro Website 🔥</div>
+		<div class=nav>
+		
+			<p>LINKS:</p>
+			
+			<a href="aboutme.html">About Me 🔥</a>
+			<a href="skills.html">Skills 😎</a>
+			<a href="talents.html">Talents 🏃‍💨</a>
+			<a href="ondap.html">ondap ♥😍🤤</a>
+			<a href="shush.html">🤫</a>
+			
+		</div>
+		<div class=main>
+			
+			<p>This is the OFFICIAL!!!</p>
+			
+			<video width="340" height="340" controls>
+				<source src="iwannabeyourondap.mp4" type="video/mp4">
+			</video>
+			
+			<p>THE MOST REAL WEBSITE!!</p>
+			
+		</div>
+		<div class=aside>
+				<a href="freerobux.html"><img src="freerobux.png" width='140' height='140'></img></a>
+				<a href="gyatt.html"><img src="gyatt.png" width='140' height='140'></a>
+				<a href="skibidi.html"><img src="skibidi.png" width='140' height='140'></a>
+		</div>
+		<div class=footer>
+			<p>© 2023 Schmungles Inc. LTD. Co. Corp.</p>
+			<a href="terms.html">Terms & Conditions & Extent Of Copyright</a>
+		</div>
+	</div>
+
+</body>
+</html>
